@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 SearchSeries
 
-## Getting Started
+SearchSeries je jednostavna i intuitivna web aplikacija za sve ljubitelje serija. Omogućuje ti da istražuješ popularne TV serije, pregledaš njihove epizode i glumačku postavu, te spremiš svoje favorite kako bi im se lakše mogao/la vratiti kasnije.
 
-First, run the development server:
+---
+
+## 🔑 Ključne funkcionalnosti
+
+- ✅ Početna stranica s najpopularnijim serijama, sortiranim po ocjenama
+- 🎭 Pregled detalja pojedine serije s opisom, žanrovima i ocjenom
+- 🧑‍🤝‍🧑 Pregled glumaca (cast) za svaku seriju
+- 📺 Pregled svih epizoda i pojedinačnih detalja epizoda
+- ⭐ Dodavanje i uklanjanje serija i glumaca iz liste favorita
+- 📂 Stranica `/favorites` za brzi pristup tvojim omiljenim sadržajima
+- 📍 Prikaz 404 stranice ako dođe do greške ili nepostojeće serije
+- 🌐 Potpuno funkcionalna aplikacija spremna za deploy na Vercel
+
+---
+
+## ⚙️ Kako pokrenuti projekt lokalno
+
+1. Kloniraj repozitorij:
+   ```bash
+   git clone https://github.com/korisnicko-ime/searchseries.git
+   cd searchseries
+   ```
+
+2. Instaliraj potrebne pakete:
+   ```bash
+   npm install
+   ```
+
+3. Pokreni aplikaciju:
+   ```bash
+   npm run dev
+   ```
+
+> ✅ Nema potrebe za dodatnim `.env` varijablama. Aplikacija koristi javni TVMaze API.
+
+---
+
+## 🚀 Build & Deploy
+
+Ako želiš testirati aplikaciju u produkcijskom modu:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Deploy (Vercel)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+jos nije odradeno
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ TODO / Moguća poboljšanja
 
-## Learn More
+- 💾 Favoriti se trenutno čuvaju samo privremeno (u memoriji). U budućnosti se planira dodati podrška za localStorage ili backend.
+- 🔍 Dodavanje funkcionalnosti za pretragu serija pomoću input polja i modala
+- 📥 Uvođenje "Učitaj više" opcije ili infinite scrolla za listu serija
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
