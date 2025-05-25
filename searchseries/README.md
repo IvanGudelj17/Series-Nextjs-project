@@ -50,7 +50,7 @@ npm start
 
 ### Deploy (Vercel)
 
-jos nije odradeno
+https://series-nextjs-project-3sos.vercel.app/
 ---
 
 ## 🛠️ TODO / Moguća poboljšanja
