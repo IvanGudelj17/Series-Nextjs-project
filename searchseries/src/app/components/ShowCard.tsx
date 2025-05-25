@@ -7,7 +7,7 @@ import { ShowCardProps } from "../types";
  * Komponenta za prikaz osnovnih informacija o jednoj seriji:
  * Slika, naziv i ocjena. Cijela kartica je kao Link za navigaciju na detalje serije.
  */
-export default function ShowCard({ id, name, image, rating }: ShowCardProps) {
+export default function ShowCard({ id, name, image, rating, priority }: ShowCardProps) {
   return (
     <Link
       href={`/show/${id}`}
@@ -21,6 +21,7 @@ export default function ShowCard({ id, name, image, rating }: ShowCardProps) {
           alt={name}
           fill
           className="object-cover"
+           priority={priority}
           unoptimized={!image?.medium} // ne koristi optimizaciju ako je placeholder
         />
       </div>

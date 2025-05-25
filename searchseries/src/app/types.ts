@@ -111,5 +111,6 @@ export type ShowCardProps = {
   rating?: {
     average?: number;
   };
+  priority?: boolean;
 };
 

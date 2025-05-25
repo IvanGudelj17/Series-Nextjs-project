@@ -68,15 +68,16 @@ export default function HomePage() {
 
       {/* Prikaz kartica serija */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-        {shows.map((show) => (
-          <ShowCard
-            key={show.id}
-            id={show.id}
-            name={show.name}
-            image={show.image}
-            rating={show.rating}
-          />
-        ))}
+{shows.map((show, index) => (
+  <ShowCard
+    key={show.id}
+    id={show.id}
+    name={show.name}
+    image={show.image}
+    rating={show.rating}
+    priority={index === 0} // Prva serija ima prioritet za brže učitavanje slike da poboljšam SEO
+  />
+))}
       </div>
     </main>
   );
