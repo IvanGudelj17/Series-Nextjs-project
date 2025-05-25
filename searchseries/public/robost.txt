@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://series-nextjs-project-3sos.vercel.app/sitemap.xml
